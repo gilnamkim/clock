@@ -3,6 +3,7 @@
 // github에 푸시했는데 글자가 깨져서 저장고급옵션에서 인코딩 방식을 utf-8로 변경해 주었다.
 // fnd문자열로 1에 해당하는 seg를 출력했다.
 // ttl7447함수 생성
+// ttl7490함수 생성
 
 #include <stdio.h>
 
@@ -50,6 +51,11 @@ void ttl7447(char input[4], char output[7])
         num |= (input[i] << i); // 비트연산으로 10진수 값을 만들어
     for (i = 0; i < 7; i++) 
         output[i] = fnd[num][i]; // 해당 10진수의 7자리 배열을 fnd에 넣어 반환한다
+}
+
+
+// ttl7490의 역할은 clk이 0일때 정수를 반환한다.
+void ttl7490() {
 
 }
 
